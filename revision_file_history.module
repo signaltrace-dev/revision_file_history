@@ -45,7 +45,6 @@ function revision_file_history_node_view($node, $view_mode, $langcode){
     $files = array();
     $current_files = array();
     foreach($node->field_file_upload['und'] as $index => $file_field){
-      $node->content['field_file_upload'][$index]['suffix'] = '<h1>test</h2>';
       revision_file_history_build_files_array($current_files, $file_field);
     }
 
